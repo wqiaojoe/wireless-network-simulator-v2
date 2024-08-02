@@ -63,7 +63,8 @@ class Environment:
         if not substep:
             self.connection_advertisement.clear()
         for ue in self.ue_list:
-            self.ue_list[ue].step(substep)
+            #self.ue_list[ue].step(substep)
+            self.ue_list[ue].step()
         for bs in self.bs_list:
             self.bs_list[bs].step()
         '''       
